@@ -1,0 +1,22 @@
+services:
+  mova-syncnode:
+    image: movachain/mainnet-syncnode:0.0.1
+    environment:
+      - ID=0
+      - READ-TIMEOUT=60
+      - WRITE-TIMEOUNT=60 
+      - ENABLE-CROSS-DOMAIN=true
+      - ENABLE-LIGHT-NODE=true
+      - ENABLE-SYNC-FRAME=false
+
+    deploy:
+      restart_policy:
+        condition: on-failure
+        delay: 15s
+        max_attempts: 100
+        window: 120s
+    ports:
+      - "26656:26656"
+      - "26658:8545" 
+    volumes:
+      - ./node-data:/mova/node0
