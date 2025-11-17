@@ -1,6 +1,7 @@
 services:
   mova-syncnode:
     image: movachain/mainnet-syncnode:0.0.1
+    entrypoint: /mova/entrypoint.sh
     environment:
       - ID=0
       - READ-TIMEOUT=60
@@ -19,4 +20,6 @@ services:
       - "26656:26656"
       - "26658:8545" 
     volumes:
+      - ./scripts/entrypoint.sh:/mova/entrypoint.sh
+      - ./mainnet-config:/mova/
       - ./node-data:/mova/node0
