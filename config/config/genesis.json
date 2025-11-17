@@ -1,0 +1,572 @@
+{
+  "genesis_time": "2025-08-04T15:40:13.833724783Z",
+  "chain_id": "10323",
+  "consensus_params": {
+    "event": {
+      "max_gas": "-1",
+      "max_bytes": "131072",
+      "time_iota_ms": "1000"
+    },
+    "validator": {
+      "pub_key_types": [
+        "ed25519"
+      ]
+    }
+  },
+  "app_hash": "",
+  "app_state": {
+    "gov": {
+      "starting_proposal_id": "1",
+      "deposits": null,
+      "votes": null,
+      "proposals": null,
+      "deposit_params": {
+        "min_deposit": [
+          {
+            "denom": "mova",
+            "amount": "10000000000000000000"
+          }
+        ],
+        "max_deposit_period": "172800000000000"
+      },
+      "voting_params": {
+        "voting_period": "172800000000000"
+      },
+      "tally_params": {
+        "quorum": "0.334000000000000000",
+        "threshold": "0.500000000000000000",
+        "veto": "0.334000000000000000"
+      }
+    },
+    "auth": {
+      "params": {
+        "max_memo_characters": "256",
+        "tx_sig_limit": "7",
+        "tx_size_cost_per_byte": "0",
+        "sig_verify_cost_ed25519": "590",
+        "sig_verify_cost_secp256k1": "1000"
+      },
+      "accounts": [
+        {
+          "type": "mova/MainAccount",
+          "value": {
+            "name": "",
+            "address": "mova15z6kyasytkldxl7efgqspcg6vk8n2w8k93sl2c",
+            "sub_addresses": null,
+            "coins": [
+              {
+                "denom": "coin0",
+                "amount": "1"
+              },
+              {
+                "denom": "coin1",
+                "amount": "1"
+              },
+              {
+                "denom": "coin2",
+                "amount": "1"
+              },
+              {
+                "denom": "coin3",
+                "amount": "1"
+              },
+              {
+                "denom": "coin4",
+                "amount": "1"
+              },
+              {
+                "denom": "mova",
+                "amount": "200000000000000000000000000"
+              }
+            ],
+            "public_key": null,
+            "account_number": 0,
+            "sequence": 0,
+            "code_hash": "c5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470",
+            "ethAddress": "0xa0b56276045dbed37fd94a0100e11a658f3538f6"
+          }
+        },
+        {
+          "type": "mova/MainAccount",
+          "value": {
+            "name": "",
+            "address": "mova15xl5xv5nnvgwun5jlgf9smz9r3f9x0l4t4pcvg",
+            "sub_addresses": null,
+            "coins": [
+              {
+                "denom": "coin0",
+                "amount": "1"
+              },
+              {
+                "denom": "coin1",
+                "amount": "1"
+              },
+              {
+                "denom": "coin2",
+                "amount": "1"
+              },
+              {
+                "denom": "coin3",
+                "amount": "1"
+              },
+              {
+                "denom": "coin4",
+                "amount": "1"
+              },
+              {
+                "denom": "mova",
+                "amount": "200000000000000000000000000"
+              }
+            ],
+            "public_key": null,
+            "account_number": 0,
+            "sequence": 0,
+            "code_hash": "c5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470",
+            "ethAddress": "0xa1bf4332939b10ee4e92fa12586c451c52533ff5"
+          }
+        },
+        {
+          "type": "mova/MainAccount",
+          "value": {
+            "name": "",
+            "address": "mova15tnxnmzlduew2qh6turylnudhgcdfrlw0uxy7g",
+            "sub_addresses": null,
+            "coins": [
+              {
+                "denom": "coin0",
+                "amount": "1"
+              },
+              {
+                "denom": "coin1",
+                "amount": "1"
+              },
+              {
+                "denom": "coin2",
+                "amount": "1"
+              },
+              {
+                "denom": "coin3",
+                "amount": "1"
+              },
+              {
+                "denom": "coin4",
+                "amount": "1"
+              },
+              {
+                "denom": "mova",
+                "amount": "100000000000000000000000000"
+              }
+            ],
+            "public_key": null,
+            "account_number": 0,
+            "sequence": 0,
+            "code_hash": "c5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470",
+            "ethAddress": "0xa2e669ec5f6f32e502fa5f064fcf8dba30d48fee"
+          }
+        },
+        {
+          "type": "mova/MainAccount",
+          "value": {
+            "name": "",
+            "address": "mova1nc9akflqjcwnwmnq2dl832xhm25820f40x02lc",
+            "sub_addresses": null,
+            "coins": [
+              {
+                "denom": "coin0",
+                "amount": "1"
+              },
+              {
+                "denom": "coin1",
+                "amount": "1"
+              },
+              {
+                "denom": "coin2",
+                "amount": "1"
+              },
+              {
+                "denom": "coin3",
+                "amount": "1"
+              },
+              {
+                "denom": "coin4",
+                "amount": "1"
+              },
+              {
+                "denom": "mova",
+                "amount": "1000000000000000000"
+              }
+            ],
+            "public_key": null,
+            "account_number": 0,
+            "sequence": 0,
+            "code_hash": "c5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470",
+            "ethAddress": "0x9e0bdb27e0961d376e60537e78a8d7daa8753d35"
+          }
+        },
+        {
+          "type": "mova/MainAccount",
+          "value": {
+            "name": "",
+            "address": "mova1370wn8twenvhd9hjjtxvfc0ndz63yjs950fea2",
+            "sub_addresses": null,
+            "coins": [
+              {
+                "denom": "coin0",
+                "amount": "1"
+              },
+              {
+                "denom": "coin1",
+                "amount": "1"
+              },
+              {
+                "denom": "coin2",
+                "amount": "1"
+              },
+              {
+                "denom": "coin3",
+                "amount": "1"
+              },
+              {
+                "denom": "coin4",
+                "amount": "1"
+              },
+              {
+                "denom": "mova",
+                "amount": "1"
+              }
+            ],
+            "public_key": null,
+            "account_number": 0,
+            "sequence": 0,
+            "code_hash": "c5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470",
+            "ethAddress": "0x8f9ee99d6eccd97696f292ccc4e1f368b5124a05"
+          }
+        },
+        {
+          "type": "mova/MainAccount",
+          "value": {
+            "name": "",
+            "address": "mova1qtkcpyhmce5lzvrfmm8y7eswpc7du6g6eaqws2",
+            "sub_addresses": null,
+            "coins": [
+              {
+                "denom": "coin0",
+                "amount": "1"
+              },
+              {
+                "denom": "coin1",
+                "amount": "1"
+              },
+              {
+                "denom": "coin2",
+                "amount": "1"
+              },
+              {
+                "denom": "coin3",
+                "amount": "1"
+              },
+              {
+                "denom": "coin4",
+                "amount": "1"
+              },
+              {
+                "denom": "mova",
+                "amount": "1000000000000000000"
+              }
+            ],
+            "public_key": null,
+            "account_number": 0,
+            "sequence": 0,
+            "code_hash": "c5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470",
+            "ethAddress": "0x02ed8092fbc669f13069dece4f660e0e3cde691a"
+          }
+        },
+        {
+          "type": "mova/MainAccount",
+          "value": {
+            "name": "",
+            "address": "mova19frx75vwuupvhxa2arp3vjgc6w84f88cepes8d",
+            "sub_addresses": null,
+            "coins": [
+              {
+                "denom": "coin0",
+                "amount": "1"
+              },
+              {
+                "denom": "coin1",
+                "amount": "1"
+              },
+              {
+                "denom": "coin2",
+                "amount": "1"
+              },
+              {
+                "denom": "coin3",
+                "amount": "1"
+              },
+              {
+                "denom": "coin4",
+                "amount": "1"
+              },
+              {
+                "denom": "mova",
+                "amount": "1000000000000000000"
+              }
+            ],
+            "public_key": null,
+            "account_number": 0,
+            "sequence": 0,
+            "code_hash": "c5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470",
+            "ethAddress": "0x2a466f518ee702cb9baae8c3164918d38f549cf8"
+          }
+        }
+      ]
+    },
+    "iam": {},
+    "bank": {
+      "send_enabled": true
+    },
+    "crisis": {
+      "constant_fee": {
+        "denom": "mova",
+        "amount": "1000"
+      }
+    },
+    "slashing": {
+      "params": {
+        "signed_blocks_window": "100",
+        "min_signed_per_window": "0.500000000000000000",
+        "downtime_jail_duration": "600000000000",
+        "slash_fraction_double_sign": "0.050000000000000000",
+        "slash_fraction_downtime": "0.010000000000000000"
+      },
+      "signing_infos": {},
+      "missed_blocks": {}
+    },
+    "punishment": {},
+    "genutil": {
+      "gentxs": [
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "node2",
+                    "identity": "",
+                    "website": "",
+                    "security_contact": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.100000000000000000",
+                    "max_rate": "0.200000000000000000",
+                    "max_change_rate": "0.010000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "mova1qtkcpyhmce5lzvrfmm8y7eswpc7du6g6eaqws2",
+                  "validator_address": "movavaloper1qtkcpyhmce5lzvrfmm8y7eswpc7du6g6qrh0vx",
+                  "pubkey": "movavalconspub1zmnvdy3q3etxramse6rvjwwnym8kj77r7gpw5wpm6ledmv2gqjcjqv9w0k8s3gkmtt",
+                  "value": {
+                    "denom": "mova",
+                    "amount": "1000000000000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "200000"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "crypto/PubKeySecp256k1",
+                  "value": "BPH0SI0ih13tB2Lc9Qu61qw9iPrVO5+grVD0w5aL7uO6E8XYYECK1XCInC+iYEy17VZJR2pRiYgvQhSx/MLfnSY="
+                },
+                "signature": "bNvb+L6UoBhq7oIILkUvl5cDFgi/n9xSTQHk+z8rX7kszUfB6X/cSJgfafDqQL4KV+BWOSC87riPTJOfYbrlsAA="
+              }
+            ],
+            "memo": "100823ad703f1454accc10565e0520e7a398ef16@172.31.27.89:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "node1",
+                    "identity": "",
+                    "website": "",
+                    "security_contact": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.100000000000000000",
+                    "max_rate": "0.200000000000000000",
+                    "max_change_rate": "0.010000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "mova1nc9akflqjcwnwmnq2dl832xhm25820f40x02lc",
+                  "validator_address": "movavaloper1nc9akflqjcwnwmnq2dl832xhm25820f4kcctr5",
+                  "pubkey": "movavalconspub1zmnvdy3qgqzzrp5054c3m9tqcf4s04mafvkv0cveuthjvxr9w4wce8p369ssu909lp",
+                  "value": {
+                    "denom": "mova",
+                    "amount": "1000000000000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "200000"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "crypto/PubKeySecp256k1",
+                  "value": "BD0AHrdzp9/GyX7udiW/YDMmmGm9ENBl9RYqbBaEF62YFr8a6Wsi5ANdkZsDX/gugu1Fv/Y5ZAq4Gf9o2aTdaSE="
+                },
+                "signature": "oXDSam47vCqXFPqMjQlFuik4iV3FCUx1Tu53oHTyfGBNmwif9MsJqM8Y2UwhlVRG77U4EsBb6YhNVHWxtQ8ZIgE="
+              }
+            ],
+            "memo": "44b640c3ad92938031387fbed66291cb0e3609ac@172.31.33.58:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "node3",
+                    "identity": "",
+                    "website": "",
+                    "security_contact": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.100000000000000000",
+                    "max_rate": "0.200000000000000000",
+                    "max_change_rate": "0.010000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "mova19frx75vwuupvhxa2arp3vjgc6w84f88cepes8d",
+                  "validator_address": "movavaloper19frx75vwuupvhxa2arp3vjgc6w84f88cqlw3mp",
+                  "pubkey": "movavalconspub1zmnvdy3qejtqxvvdp4kw37ap5e4rlarzpm8mp75a9pf639ap357zj6f5zk4svx999s",
+                  "value": {
+                    "denom": "mova",
+                    "amount": "1000000000000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "200000"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "crypto/PubKeySecp256k1",
+                  "value": "BMe446ofMA+Vr0WAU3wsYA+Iff4QQ/r+7YSnOFV+tJUP/O28r731saScBx+abIbNg9OzYdnhmZgdFNI28v2kgZc="
+                },
+                "signature": "PGI9eaYxni1DnaFXixBBcfiQzafaPMa3ZEFfVGfRGuozRnlG/t8MABlg6zZJPuG+X+Ex78v/HKV7jVu4ejQS3QE="
+              }
+            ],
+            "memo": "b4c08883d25e05c3458ff3f7c3d3fd968be58dad@172.31.6.212:26656"
+          }
+        }
+      ]
+    },
+    "supply": {
+      "supply": []
+    },
+    "distribution": {
+      "params": {
+        "community_tax": "0.020000000000000000",
+        "base_proposer_reward": "0.010000000000000000",
+        "bonus_proposer_reward": "0.040000000000000000",
+        "withdraw_addr_enabled": true
+      },
+      "fee_pool": {
+        "community_pool": []
+      },
+      "delegator_withdraw_infos": [],
+      "previous_proposer": "",
+      "outstanding_rewards": [],
+      "validator_accumulated_commissions": [],
+      "validator_historical_rewards": [],
+      "validator_current_rewards": [],
+      "delegator_starting_infos": [],
+      "validator_slash_events": []
+    },
+    "params": null,
+    "evm": {
+      "accounts": null,
+      "ethlogs": null,
+      "params": {
+        "evm_denom": "mova",
+        "enable_create": true,
+        "enable_call": true,
+        "chain_config": {
+          "homestead_block": "0",
+          "dao_fork_block": "0",
+          "dao_fork_support": true,
+          "eip150_block": "0",
+          "eip150_hash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "eip155_block": "0",
+          "eip158_block": "0",
+          "byzantium_block": "0",
+          "constantinople_block": "0",
+          "petersburg_block": "0",
+          "istanbul_block": "0",
+          "muir_glacier_block": "0",
+          "yoloV2_block": "-1",
+          "ewasm_block": "-1"
+        }
+      }
+    },
+    "mint": {
+      "minter": {
+        "total_provisions": "500000000000000000000000000.000000000000000000",
+        "minted_per_duration": "2000000000.000000000000000000",
+        "genesis_block_time": "0001-01-01T00:00:00Z",
+        "latest_block_time": "0001-01-01T00:00:00Z",
+        "inflation": "0.130000000000000000",
+        "annual_provisions": "0.000000000000000000"
+      },
+      "params": {
+        "mint_denom": "mova",
+        "inflation_rate_change": "0.130000000000000000",
+        "inflation_max": "0.200000000000000000",
+        "inflation_min": "0.070000000000000000",
+        "goal_bonded": "0.670000000000000000",
+        "blocks_per_year": "6311520"
+      }
+    },
+    "staking": {
+      "params": {
+        "unbonding_time": "1814400000000000",
+        "max_validators": 3,
+        "max_entries": 7,
+        "historical_entries": 0,
+        "bond_denom": "mova"
+      },
+      "last_total_power": "0",
+      "last_validator_powers": null,
+      "validators": null,
+      "delegations": null,
+      "unbonding_delegations": null,
+      "redelegations": null,
+      "exported": false
+    }
+  }
+}
