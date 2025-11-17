@@ -21,5 +21,5 @@ services:
       - "26658:8545" 
     volumes:
       - ./scripts/entrypoint.sh:/mova/entrypoint.sh
-      - ./mainnet-config:/mova/
+      - ./mainnet-config:/mova/mainnet-config
       - ./node-data:/mova/node0
