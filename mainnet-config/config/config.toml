@@ -171,8 +171,7 @@ external_address = ""
 seeds = ""
 
 # Comma separated list of nodes to keep persistent connections to
-persistent_peers = "cd5f3771bee159bfa9b3f19749a088231e106365@211.211.211.204:26656,c520c43f9a277fd6c5db5811c3227db690caaf15@211.211.211.206:26656,a60ddf12c7255fb743cabbef944f42534dce7ba6@211.211.211.207:26656"
-
+persistent_peers = "cd5f3771bee159bfa9b3f19749a088231e106365@wss.rpc.movachain.com:28004, c520c43f9a277fd6c5db5811c3227db690caaf15@wss.rpc.movachain.com:28005, a60ddf12c7255fb743cabbef944f42534dce7ba6@wss.rpc.movachain.com:28006"
 # UPNP port forwarding
 upnp = false
 
