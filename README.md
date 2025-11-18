@@ -37,11 +37,11 @@ cd mova-chain-node
 
 ## Bootstrap the node
 
-There are two ways to start the node: start syncing from scratch, or speed up synchronization by using a snapshot.
+There are two ways to start the node: start syncing from genesis, or speed up synchronization by using a snapshot.
 
-### Option 1 — Start from scratch
+### Option 1 — Start from genesis
 
-To start syncing from scratch, run:
+To start syncing from genesis, run:
 
 ```bash
 docker compose up -d
