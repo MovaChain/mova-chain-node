@@ -13,7 +13,7 @@ Ports
 - 26656: P2P / gossip (must be open to the public). If this port is blocked, your node's IP may be deprioritized by peers.
 - 26658: EVM JSON-RPC
 
-For lowest latency, run the node in Tokyo, Japan.
+For lowest latency, run the node in Singapore.
 
 ---
 
