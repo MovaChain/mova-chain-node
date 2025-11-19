@@ -9,7 +9,10 @@ services:
       - ENABLE-CROSS-DOMAIN=true
       - ENABLE-LIGHT-NODE=true
       - ENABLE-SYNC-FRAME=false
-
+    ulimits:
+      nofile:
+        soft: 65536
+        hard: 65536
     deploy:
       restart_policy:
         condition: on-failure
