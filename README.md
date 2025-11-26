@@ -56,7 +56,7 @@ To speed up the initial sync, download and extract a snapshot of the node state,
 1. Download the latest snapshot (recommended). The default automatic snapshot time is 20:00 UTC.
 
 ```bash
-curl -SL "https://node-snap.movachain.com/download/snapshot/node-$(date -u +'%Y%m%d').tar.gz" -O ./node-data.tar.gz
+curl -SL "https://node-snap.movachain.com/snapshot/node-$(date -u +'%Y%m%d').tar.gz" -O ./node-data.tar.gz
 ```
 
 2. Unpack the snapshot into the `node-data` directory:
@@ -68,7 +68,7 @@ tar -zxf node-data.tar.gz -C ./node-data/
 Or download and extract in a single command:
 
 ```bash
-curl -SL "https://node-snap.movachain.com/download/snapshot/node-$(date -u +'%Y%m%d').tar.gz" | tar -xzf - -C ./node-data/
+curl -SL "https://node-snap.movachain.com/snapshot/node-$(date -u +'%Y%m%d').tar.gz" | tar -xzf - -C ./node-data/
 ```
 
 3. Start the node:
