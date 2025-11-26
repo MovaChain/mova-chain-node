@@ -88,7 +88,7 @@ tail -f ./node-data/stdout-movad.txt | grep Committed
 2) Verify the EVM JSON-RPC is responding:
 
 ```bash
-curl -X POST -H 'Content-Type: application/json' --data '{"jsonrpc":"2.0","method":"eth_getBlockByNumber","params":["latest", true],"id":1}' http://127.0.0.1:26658
+curl -X POST -H 'Content-Type: application/json' --data '{"jsonrpc":"2.0","method":"eth_getBlockByNumber","params":["latest", false],"id":1}' http://127.0.0.1:26658
 ```
 
 If you run the node inside Docker and expose ports differently, adjust the RPC host/port accordingly.
