@@ -1,6 +1,6 @@
 services:
   mova-syncnode:
-    image: movachain/mainnet-syncnode:0.0.3
+    image: movachain/mainnet-syncnode:0.0.4
     entrypoint: /mova/entrypoint.sh
     environment:
       - ID=0
