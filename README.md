@@ -4,9 +4,9 @@
 
 | Role      | vCPUs | RAM   | Storage  |
 |-----------|-------|-------|----------|
-| sync-node | 8     | 16 GB | 1 TB SSD |
+| sync-node | 16    | 64 GB | 1 TB SSD |
 
-It’s best to use AWS c8i.2xlarge instance, and an SSD with 8,000 IOPS and 2,000 MiB/s throughput.
+It’s best to use AWS c8i.4xlarge instance, and an SSD with 8,000 IOPS and 2,000 MiB/s throughput.
 
 Supported OS: Ubuntu 22.04 or later.
 
