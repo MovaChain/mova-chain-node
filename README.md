@@ -54,25 +54,7 @@ This will start the node and it will begin syncing from the network.
 
 ### Option 2 — Start from a snapshot (faster)
 
-To speed up the initial sync, download and extract a snapshot of the node state, then start the node.
-
-1. Download the latest snapshot (recommended). The default automatic snapshot time is 20:00 UTC.
-
-```bash
-curl -SL "https://node-snap.movachain.com/snapshot/node-$(date -u +'%Y%m%d').tar.gz" -O ./node-data.tar.gz
-```
-
-2. Unpack the snapshot into the `node-data` directory:
-
-```bash
-tar -zxf node-data.tar.gz -C ./node-data/
-```
-
-Or download and extract in a single command:
-
-```bash
-curl -SL "https://node-snap.movachain.com/snapshot/node-$(date -u +'%Y%m%d').tar.gz" | tar -xzf - -C ./node-data/
-```
+Coming soon.
 
 3. Start the node:
 
