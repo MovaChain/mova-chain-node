@@ -1,4 +1,4 @@
-chain-id = "61900"
+chain-id = "10323"
 indent = true
 keyring-backend = "test"
 output = "json"

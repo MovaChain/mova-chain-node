@@ -1,6 +1,6 @@
 services:
-  mova-syncnode:
-    image: movachain/mainnet-syncnode:0.0.4
+  mars-syncnode:
+    image: movachain/testnet-syncnode:v0.0.1
     entrypoint: /mova/entrypoint.sh
     environment:
       - ID=0
@@ -24,5 +24,5 @@ services:
       - "26658:8545" 
     volumes:
       - ./scripts/entrypoint.sh:/mova/entrypoint.sh
-      - ./mainnet-config:/mova/mainnet-config
+      - ./testnet-config:/mova/testnet-config
       - ./node-data:/mova/node0

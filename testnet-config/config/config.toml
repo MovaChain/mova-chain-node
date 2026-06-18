@@ -171,7 +171,8 @@ external_address = ""
 seeds = ""
 
 # Comma separated list of nodes to keep persistent connections to
-persistent_peers = "cd5f3771bee159bfa9b3f19749a088231e106365@wss.rpc.movachain.com:28004, c520c43f9a277fd6c5db5811c3227db690caaf15@wss.rpc.movachain.com:28005, a60ddf12c7255fb743cabbef944f42534dce7ba6@wss.rpc.movachain.com:28006"
+persistent_peers = "a3a0d95f343aa8b4a57565f35934a7f3634194be@seed.mars.movachain.com:28001,08fd42a107d00ca6135d3fdd5a400fe57b6b3c88@seed.mars.movachain.com:28002,ed17410c261002a4b01191c8287e2e9a1c2fc7d6@seed.mars.movachain.com:28003"
+
 # UPNP port forwarding
 upnp = false
 
@@ -183,7 +184,7 @@ addr_book_file = "config/addrbook.json"
 addr_book_strict = false
 
 # Maximum number of inbound peers
-max_num_inbound_peers = 0
+max_num_inbound_peers = 40
 
 # Maximum number of outbound peers to connect to, excluding persistent peers
 max_num_outbound_peers = 10
@@ -198,7 +199,7 @@ persistent_peers_max_dial_period = "0s"
 flush_throttle_timeout = "100ms"
 
 # Maximum size of a message packet payload, in bytes
-max_packet_msg_payload_size = 1024000
+max_packet_msg_payload_size = 1024
 
 # Rate at which packets can be sent, in bytes/second
 send_rate = 5120000
@@ -207,7 +208,7 @@ send_rate = 5120000
 recv_rate = 5120000
 
 # Set true to enable the peer-exchange reactor
-pex = false
+pex = true
 
 # Seed mode, in which node constantly crawls the network and looks for
 # peers. If another node asks it for addresses, it responds and disconnects.
@@ -219,7 +220,7 @@ seed_mode = false
 private_peer_ids = ""
 
 # Toggle to disable guard against peers connecting from the same ip.
-allow_duplicate_ip = true
+allow_duplicate_ip = false
 
 # Peer connection configuration.
 handshake_timeout = "20s"
@@ -316,3 +317,11 @@ max_open_connections = 3
 
 # Instrumentation namespace
 namespace = "mova"
+
+##### extra configuration options #####
+[extra]
+
+save_tx_err = false
+save_tx_redis = ""
+save_tx_redis_password = ""
+

@@ -6,7 +6,7 @@ initialize() {
 
 	if [ ! -f "$NODE_DIR/config/genesis.json" ]; then
 		echo "Initializing node directory at $NODE_DIR"
-		cp -r /mova/mainnet-config/* "$NODE_DIR"
+		cp -r /mova/testnet-config/* "$NODE_DIR"
 	fi
 }
 
