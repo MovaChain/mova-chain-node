@@ -25,6 +25,7 @@ For lowest latency, run the node in Singapore.
 
 - Docker
 - Docker Compose
+- zstd (for extracting snapshots)
 
 Follow Docker's official installation guide for your OS:
 
@@ -54,7 +55,28 @@ This will start the node and it will begin syncing from the network.
 
 ### Option 2 — Start from a snapshot (faster)
 
-Coming soon.
+To speed up the initial sync, download and extract a snapshot of the node state, then start the node.
+
+1. Download the latest snapshot (recommended). The default automatic snapshot time is 20:00 UTC.
+
+```
+curl -SL "https://node-snap.mars.movachain.com/snapshot/node-$(date -u +'%Y%m%d').tar.zst" -o ./node-data.tar.zst
+```
+2. Unpack the snapshot into the node-data directory:
+
+```
+zstd -d -T0 -c node-data.tar.zst | tar -xf - -C ./node-data/
+```
+Or download and extract in a single command:
+
+```
+curl -SL "https://node-snap.mars.movachain.com/snapshot/node-$(date -u +'%Y%m%d').tar.zst" | zstd -d -T0 -c | tar -xf - -C ./node-data/
+```
+
+3. Start the node:
+```
+docker compose up -d
+```
 
 ## Check node status
 
