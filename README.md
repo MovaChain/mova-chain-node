@@ -56,12 +56,6 @@ This will start the node and it will begin syncing from the network.
 
 Coming soon.
 
-3. Start the node:
-
-```bash
-docker compose up -d
-```
-
 ## Check node status
 
 1) Check recent synced blocks by following the node logs:
