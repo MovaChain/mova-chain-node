@@ -1,6 +1,6 @@
 services:
   mars-syncnode:
-    image: movachain/testnet-syncnode:v0.0.1
+    image: movachain/testnet-syncnode:v0.0.2
     entrypoint: /mova/entrypoint.sh
     environment:
       - ID=0
@@ -9,6 +9,14 @@ services:
       - ENABLE-CROSS-DOMAIN=true
       - ENABLE-LIGHT-NODE=true
       - ENABLE-SYNC-FRAME=false
+      - MOVA_BUNDLER_RPC=https://mars.rpc.movachain.com
+      - MOVA_TRACEWORKER_CATCHUP_ENABLED=false
+      - MOVA_TRACESTORE_DISABLE=0
+      - MOVA_TRACE_CATCHUP_TIMEOUT=180s
+      - MOVA_TRACEWORKER_CONCURRENCY=24
+      - MOVA_TRACE_LIMIT=50
+      - MOVA_TRACE_STRUCTLOGGER_ENABLED=1
+      - MOVA_TRACE_CALLTRACER_ENABLED=1
     ulimits:
       nofile:
         soft: 65536
