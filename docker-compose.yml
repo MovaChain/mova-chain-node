@@ -1,6 +1,6 @@
 services:
   mova-syncnode:
-    image: movachain/mainnet-syncnode:0.0.6
+    image: movachain/mainnet-syncnode:v0.1.0
     entrypoint: /mova/entrypoint.sh
     environment:
       - ID=0
@@ -9,6 +9,14 @@ services:
       - ENABLE-CROSS-DOMAIN=true
       - ENABLE-LIGHT-NODE=true
       - ENABLE-SYNC-FRAME=false
+      - MOVA_BUNDLER_RPC=https://rpc.movachain.com
+      - MOVA_TRACEWORKER_CATCHUP_ENABLED=false
+      - MOVA_TRACESTORE_DISABLE=0
+      - MOVA_TRACE_CATCHUP_TIMEOUT=180s
+      - MOVA_TRACEWORKER_CONCURRENCY=8
+      - MOVA_TRACE_LIMIT=50
+      - MOVA_TRACE_STRUCTLOGGER_ENABLED=1
+      - MOVA_TRACE_CALLTRACER_ENABLED=1
     ulimits:
       nofile:
         soft: 65536
@@ -21,7 +29,7 @@ services:
         window: 120s
     ports:
       - "26656:26656"
-      - "26658:8545" 
+      - "26658:9545"
     volumes:
       - ./scripts/entrypoint.sh:/mova/entrypoint.sh
       - ./mainnet-config:/mova/mainnet-config
