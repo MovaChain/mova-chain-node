@@ -13,7 +13,10 @@ Supported OS: Ubuntu 22.04 or later.
 Ports
 
 - 26656: P2P / gossip (must be open to the public). If this port is blocked, your node's IP may be deprioritized by peers.
-- 26658: EVM JSON-RPC
+- 26658: EVM JSON-RPC (legacy)
+- 26659: EVM WebSocket (legacy)
+- 26660: EVM JSON-RPC (**recommended** — faster, use this over 26658)
+- 26661: EVM WebSocket (**recommended** — faster, use this over 26659)
 
 For lowest latency, run the node in Singapore.
 
@@ -33,7 +36,7 @@ https://docs.docker.com/engine/install/ubuntu/
 ### Clone the repository
 
 ```bash
-git clone https://github.com/MovaChain/mova-chain-node
+git clone -b movan https://github.com/MovaChain/mova-chain-node
 cd mova-chain-node
 ```
 
@@ -90,7 +93,7 @@ tail -f ./node-data/stdout-movad.txt | grep Committed
 2) Verify the EVM JSON-RPC is responding:
 
 ```bash
-curl -X POST -H 'Content-Type: application/json' --data '{"jsonrpc":"2.0","method":"eth_getBlockByNumber","params":["latest", false],"id":1}' http://127.0.0.1:26658
+curl -X POST -H 'Content-Type: application/json' --data '{"jsonrpc":"2.0","method":"eth_getBlockByNumber","params":["latest", false],"id":1}' http://127.0.0.1:26660
 ```
 
 If you run the node inside Docker and expose ports differently, adjust the RPC host/port accordingly.
@@ -99,7 +102,7 @@ If you run the node inside Docker and expose ports differently, adjust the RPC h
 
 To update the node version:
 
-1. Edit `MOVA_VERSION` in `docker-compose.yml` to the desired release tag.
+1. Edit image version in `docker-compose.yml` to the desired release tag.
 2. Pull the new images and restart the stack:
 
 ```bash

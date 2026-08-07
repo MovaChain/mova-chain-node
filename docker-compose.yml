@@ -1,6 +1,6 @@
 services:
-  mova-syncnode:
-    image: movachain/mainnet-syncnode:v0.1.0
+  movan-syncnode:
+    image: movachain/movan-syncnode:v0.0.1
     entrypoint: /mova/entrypoint.sh
     environment:
       - ID=0
@@ -21,7 +21,10 @@ services:
         window: 120s
     ports:
       - "26656:26656"
-      - "26658:9545"
+      - "26658:8545"
+      - "26659:8546"
+      - "26660:9545"
+      - "26661:9546"
     volumes:
       - ./scripts/entrypoint.sh:/mova/entrypoint.sh
       - ./mainnet-config:/mova/mainnet-config
